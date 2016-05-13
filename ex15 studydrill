@@ -1,0 +1,13 @@
+from sys import argv
+
+script, filename = argv
+
+print "I am going to print out your %r file" % (filename)
+print "Hit RETURN if you agree"
+print "Hit CTRL-C if you do not agree"
+
+raw_input("?")
+txt = open(filename)
+
+print txt.read()
+print "I have completed the action. Goodbye."
